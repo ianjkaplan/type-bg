@@ -1,0 +1,39 @@
+{
+  "name": "type-bg",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@rslib/core": "^0.8.0",
+    "@types/node": "^22.8.1",
+    "@types/pg": "^8.15.2",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1",
+    "vitest": "^3.1.4"
+  },
+  "private": true,
+  "dependencies": {
+    "kysely": "^0.28.2",
+    "pg": "^8.16.0"
+  }
+}
